@@ -1,85 +1,163 @@
-<body id="description" onload="parent.postMessage('{&quot;iframe_height&quot;:&quot;'+YAHOO.util.Dom.getDocumentHeight()+'&quot;}', '*');">
+<!DOCTYPE html>
+<html lang="en">
 
-<div class=”navigation”>
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Bondok Menu</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- owl css -->
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- responsive-->
+    <link rel="stylesheet" href="responsive.css">
+    <!-- awesome fontfamily -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+ 
+<body class="main-layout Recipes_page">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="" /></div>
+    </div>
 
-<div class=”prev nav-btn”><</div>
+    <div class="wrapper">
+    <!-- end loader -->
 
-<div class=”next nav-btn”>></div>
+     
 
+    <div id="content">
+    <!-- header -->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+				
+                    <div class="full">
+					
+                        <a class="logo" href="index.html"><img src="logo.png" alt="#" /></a>    
+						
+						
+					
+						
+                    </div>
+                </div>
+				
+				 
+                <div class="col-md-9">
+				
+                    <div class="full">
+                        <div class="right_header_info">
+						
+                            <ul>
+                       
+                                    
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    
+    <div class="yellow_bg">
+   <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="title">
+                     <h2>Bondok Menu</h2>
+					<marquee direction="right"><h2># اسمع صوت القرمشة #</h2></marquee>
+                    
+                  </div>
+               </div>
+            </div>
+          </div>
 </div>
-<style type="text/css">
-body{
-background:#0e0e0e;
-}
-
-.box{
-overflow: auto;
-position: absolute;
-text-align: center;
-}
-
-#layout-container{
-font-size: 11px;
-font-family: 'Century Gothic',sans-serif;
-width: 900px;
-height: 743px;
-color: #fff;
-margin: 0px auto;
-}
-
-area,map{cursor:pointer;outline:0;}
-
-#layoutimg{position: absolute;}
-
-#wireframebox{
-margin-left: 0px1px;
-margin-top: 90px;
-width: 700px;
-height: 700px;
-}
-
-#wireframebox img{
-width:720px;
-height:500px;
-margin-right:15px;
-margin-bottom:19px;
-}
-
-#relatedbox{
-margin-left: 2px;
-margin-top: 627px;
-width: 894px;
-height: 21px;
-}
-
-</style>
-<center>
-<div id="layout-container">
-
-<img src="bb.png" alt="BondokChicken" width="850" height="400">
-<img src="1.jpg" alt="BondokChicken" width="800" height="800">
-<img src="2.jpg" alt="BondokChicken" width="800" height="800">
-<img src="3.jpg" alt="BondokChicken" width="800" height="800">
-<img src="4.jpg" alt="BondokChicken" width="800" height="800">
-<img src="5.jpg" alt="BondokChicken" width="800" height="800">
-<img src="6.jpg" alt="BondokChicken" width="800" height="800">
-<img src="7.jpg" alt="BondokChicken" width="800" height="800">
-</center>
-
+    <!-- section -->
+    <div class="footer">
+       <center>
+          <img src="1.jpg" alt="#" />
+          <img src="2.jpg" alt="#" />
+		  <img src="3.jpg" alt="#" />
+		  <img src="4.jpg" alt="#" />
+		  <img src="5.jpg" alt="#" />
+		  <img src="6.jpg" alt="#" />
+		  <img src="7.jpg" alt="#" />
+		  <marquee direction="right"><h2># اسمع صوت القرمشة #</h2></marquee>
 </div>
+                 
+      
+    
+    
 
+    <!-- Javascript files-->
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="owl.carousel.min.js"></script>
+    <script src="custom.js"></script>
+     <script src="jquery.mCustomScrollbar.concat.min.js"></script>
+    
+     <script src="jquery-3.0.0.min.js"></script>
+   <script type="text/javascript">
+        $(document).ready(function() {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
 
-</div>
+            $('#dismiss, .overlay').on('click', function() {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
 
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
 
+<script>
+         $(document).ready(function() {
+           var owl = $('.owl-carousel');
+           owl.owlCarousel({
+             margin: 10,
+             nav: true,
+             loop: true,
+             responsive: {
+               0: {
+                 items: 1
+               },
+               600: {
+                 items: 2
+               },
+               1000: {
+                 items: 5
+               }
+             }
+           })
+         })
+      </script>
 
+</body>
 
-
-<div id="relatedbox" class="box">
-
-
-</div>
-
-
-</div>
-<center>
+</html>
